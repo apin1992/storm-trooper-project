@@ -1,6 +1,14 @@
+:root {
+    --primaryDark: #151515;
+    --secondaryDark: #2c041c;
+    --primaryColor: #600060;
+    --secondaryColor: #f6edf6;
+    --fontSizeBody: 1.125rem;
+}
 html {
   box-sizing: border-box;
   font-size: 100%;
+  font-family: 'Space Grotesk', sans-serif;
 }
 *,
 *::before,
@@ -9,4 +17,8 @@ html {
 }
 body {
   margin: 0;
+  background-color: var(--primaryDark);
+  color: var(--secondaryColor);
+  font-size:var(--fontSizeBody);
+  line-height: 1.5;
 }

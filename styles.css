@@ -1,14 +1,20 @@
 :root {
-    --primaryDark: #151515;
-    --secondaryDark: #2c041c;
-    --primaryColor: #600060;
-    --secondaryColor: #f6edf6;
-    --fontSizeBody: 1.125rem;
+  --primaryDark: #151515;
+  --secondaryDark: #2c041c;
+  --primaryColor: #600060;
+  --secondaryColor: #f6edf6;
+  --fontSize-18: 1.125rem;
+  --fontSize-24: 1.5rem;
+  --fontSize-32: 2rem;
+  --fontSize-40: 2.5rem;
+  --fontSize-48: 3rem;
+  --fontSize-72: 4.5rem;
+  --fontSize-88: 5.5rem;
 }
 html {
   box-sizing: border-box;
   font-size: 100%;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 *,
 *::before,
@@ -19,6 +25,18 @@ body {
   margin: 0;
   background-color: var(--primaryDark);
   color: var(--secondaryColor);
-  font-size:var(--fontSizeBody);
+  font-size: var(--fontSize);
   line-height: 1.5;
+}
+
+.wrapper {
+    width: calc(100% - 2rem);
+    max-width: 70rem;
+    margin-inline: auto;
+}
+@media (min-width: 37.5rem) { /*600px*/
+    .wrapper {
+        width: calc(100% - 3.75rem);
+    }
+
 }
